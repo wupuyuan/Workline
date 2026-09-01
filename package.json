@@ -1,0 +1,35 @@
+{
+  "name": "workline",
+  "version": "0.1.0",
+  "description": "Workline - 项目管理桌面应用（甘特图 / 任务依赖 / 资源分配）",
+  "main": "./out/main/index.js",
+  "author": "Workline",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit",
+    "pack:win": "electron-vite build && electron-builder --win",
+    "pack:portable": "electron-vite build && electron-builder --win portable",
+    "pack:mac": "electron-vite build && electron-builder --mac",
+    "pack:linux": "electron-vite build && electron-builder --linux",
+    "pack:all": "electron-vite build && electron-builder -mwl"
+  },
+  "dependencies": {
+    "sql.js": "^1.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^44.1.0",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
